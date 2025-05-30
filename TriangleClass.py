@@ -11,7 +11,7 @@ class Triangle:
         return self.lvl // 2 * (self.lvl + 1)
 
     def changeSymbol(self, char):
-        self.symbol = char
+        self.symbol = char + " "
 
     def get_lvl(self):
         return self.lvl
