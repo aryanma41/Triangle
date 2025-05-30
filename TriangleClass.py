@@ -1,5 +1,10 @@
 from math import sqrt
 
+"""
+ارین مفتوح
+حل تمرین دو و سه
+"""
+
 
 class Triangle:
 
