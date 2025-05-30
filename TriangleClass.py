@@ -56,4 +56,5 @@ def triangle(n):
 
 
 if __name__ == "__main__":
+    triangle(7)
     triangle(5)
