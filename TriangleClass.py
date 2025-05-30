@@ -60,6 +60,13 @@ def triangle(n):
         space -= 1
 
 
+def triangle2(n):
+    for i in range(n):
+        print(((n - i) // 2) * " "+ "*"+ ((2 * i + 1) - 2) * "O"+ int(((2 * i + 1) - 2) > 0) * "*")
+
+
 if __name__ == "__main__":
     triangle(7)
     triangle(5)
+    triangle2(2)
+    triangle(11)
