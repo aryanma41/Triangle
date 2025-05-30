@@ -5,7 +5,7 @@ class Triangle:
 
     def __init__(self, lvl=0):
         self.lvl = lvl
-        self.symbol = "*"
+        self.symbol = "* "
 
     def get_rig(self):
         return self.lvl // 2 * (self.lvl + 1)
@@ -38,12 +38,10 @@ class Triangle:
 
     def __str__(self):
         full_tree = ""
-        star = 0
-        non = 0
-        for i in range(self.lvl + 1):
-            full_tree = full_tree + (star) * self.symbol + non * "\n"
-            non = 1
-            star += 1
+        space = self.lvl - 1
+        for i in range(self.lvl):
+            full_tree = full_tree + space * " " + i * self.symbol + "\n"
+            space -= 1
         return full_tree
 
 
